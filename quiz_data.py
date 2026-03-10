@@ -404,10 +404,10 @@ QUESTIONS += [
     },
     {
         "id": 47,
-        "question": "Khi lịch hẹn của Sales đã full nhưng bạn có khách tiềm năng vào ban đêm, bạn nên làm gì?",
+        "question": "Khi lịch hẹn của Agent đã full nhưng bạn có khách tiềm năng vào ban đêm, bạn nên làm gì?",
         "options": ["Bỏ khách hàng đó", "Đặt đại vào giờ đã có người", "Inbox riêng cho Sales để đưa thêm \"lịch lót\"", "Yêu cầu khách hàng gọi lại vào tuần sau"],
-        "answer": "Inbox riêng cho Sales để đưa thêm \"lịch lót\"",
-        "explanation": "Tinh thần đồng đội và sự linh hoạt của Manager giúp tối ưu hóa mọi cơ hội. 'Lịch lót' là giải pháp để không bỏ rơi bất kỳ khách hàng tiềm năng nào."
+        "answer": "Inbox riêng cho Agent để đưa thêm \"lịch lót\"",
+        "explanation": "Tinh thần đồng đội và sự linh hoạt của Sales và Agent giúp tối ưu hóa mọi cơ hội. 'Lịch lót' là giải pháp để không bỏ rơi bất kỳ khách hàng tiềm năng nào."
     },
     {
         "id": 48,
@@ -1016,6 +1016,7 @@ QUESTIONS += [
     },
 
 ]
+
 
 
 
