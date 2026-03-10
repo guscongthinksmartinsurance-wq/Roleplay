@@ -5,20 +5,23 @@ from quiz_data import QUESTIONS
 # --- CẤU HÌNH GIAO DIỆN ---
 st.set_page_config(page_title="Thinksmart Training", page_icon="🛡️", layout="centered")
 
-# CSS Tập trung đúng yêu cầu: Sidebar Cam 3D và Hover Nút trắc nghiệm
+# CSS Tập trung đúng yêu cầu: Sidebar Vàng lấp lánh và giữ nguyên các phần còn lại
 st.markdown("""
     <style>
-    /* 1. SIDEBAR CHỮ CAM 3D NỔI BẬT */
+    /* 1. SIDEBAR CHỮ VÀNG LẤP LÁNH (GOLDEN SPARKLE) */
     [data-testid="stSidebar"] .stMarkdown p, 
     [data-testid="stSidebar"] h3, 
     [data-testid="stSidebar"] span {
-        color: #FF8C00 !important; /* Màu cam đậm */
+        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         font-weight: bold !important;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3) !important; /* Hiệu ứng 3D đổ bóng */
-        font-size: 18px !important;
+        font-size: 20px !important;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1) !important;
+        display: inline-block;
     }
 
-    /* 2. HIỆU ỨNG HOVER CHO 4 NÚT TRẮC NGHIỆM */
+    /* 2. HIỆU ỨNG HOVER CHO 4 NÚT TRẮC NGHIỆM (GIỮ NGUYÊN) */
     .stButton>button {
         width: 100%;
         text-align: left !important;
@@ -29,14 +32,14 @@ st.markdown("""
         color: #111827 !important;
         font-size: 16px !important;
         margin-bottom: 8px !important;
-        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important; /* Hiệu ứng mượt */
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
     }
     
     .stButton>button:hover {
         border-color: #D4AF37 !important;
         background-color: #FFFFFF !important;
         color: #002B5C !important;
-        transform: translateY(-3px) scale(1.02); /* Nút nổi lên và to ra nhẹ */
+        transform: translateY(-3px) scale(1.02);
         box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
     }
 
@@ -59,7 +62,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR (CHỮ CAM 3D) ---
+# --- SIDEBAR (CHỮ VÀNG LẤP LÁNH) ---
 with st.sidebar:
     st.markdown("### THINKSMART")
     st.markdown("Training System")
