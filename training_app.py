@@ -2,116 +2,135 @@ import streamlit as st
 import random
 from quiz_data import QUESTIONS
 
-# --- CẤU HÌNH UI/UX NÂNG CAO ---
-st.set_page_config(page_title="Thinksmart Training Center", page_icon="🛡️", layout="centered")
+# --- CẤU HÌNH GIAO DIỆN LUXURY ---
+st.set_page_config(page_title="Thinksmart Training", page_icon="🛡️", layout="centered")
 
-# CSS để tùy biến giao diện Navy & Gold
+# CSS Nâng cao để làm đẹp các nút bấm và khung hiển thị
 st.markdown("""
     <style>
-    /* Tổng thể nền */
+    /* Nền tổng thể */
     .stApp {
-        background-color: #f8f9fa;
+        background-color: #F4F7F9;
     }
     
-    /* Thanh Sidebar */
-    [data-testid="stSidebar"] {
-        background-color: #001e3e;
-        color: white;
-    }
-    
-    /* Khung câu hỏi (Card) */
-    .question-card {
-        background-color: #002b5c;
+    /* Khung câu hỏi */
+    .question-container {
+        background-color: #001E3E;
         padding: 30px;
         border-radius: 20px;
         color: white;
-        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        border-left: 10px solid #d4af37;
+        border-bottom: 5px solid #D4AF37;
         margin-bottom: 30px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
-
-    /* Tùy chỉnh nút bấm đáp án */
+    
+    /* Nút bấm đáp án - Chỉnh chu & Hiệu ứng */
     .stButton>button {
         width: 100%;
-        border-radius: 12px;
-        border: 1.5px solid #002b5c;
-        background-color: white;
-        color: #002b5c;
-        font-weight: 600;
-        padding: 15px;
-        transition: all 0.3s;
+        text-align: left !important;
+        padding: 18px 25px !important;
+        border-radius: 12px !important;
+        border: 2px solid #E0E0E0 !important;
+        background-color: white !important;
+        color: #333 !important;
+        font-size: 16px !important;
+        font-weight: 500 !important;
+        margin-bottom: 12px !important;
+        transition: all 0.3s ease !important;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05) !important;
     }
     
     .stButton>button:hover {
-        background-color: #d4af37;
-        color: white;
-        border-color: #d4af37;
+        border-color: #D4AF37 !important;
+        color: #D4AF37 !important;
+        background-color: #FFF9E6 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(212, 175, 55, 0.2) !important;
     }
 
-    /* Tiêu đề */
-    h1 {
-        color: #002b5c;
-        font-family: 'Times New Roman', serif;
+    /* Khung giải thích hiện ngay */
+    .explanation-box {
+        background-color: #FFFFFF;
+        padding: 25px;
+        border-radius: 15px;
+        border-left: 8px solid #D4AF37;
+        margin-top: 20px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
+
+    /* Tùy chỉnh Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #001E3E;
+    }
+    .sidebar-text { color: white; text-align: center; }
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR CHỈNH CHU ---
+# --- SIDEBAR ---
 with st.sidebar:
-    st.markdown("<h2 style='text-align: center; color: #d4af37;'>THINKSMART</h2>", unsafe_allow_html=True)
-    st.markdown("<p style='text-align: center; font-style: italic;'>Duy trì sự đúng đắn</p>", unsafe_allow_html=True)
+    st.markdown("<h1 class='sidebar-text' style='color: #D4AF37;'>THINKSMART</h1>", unsafe_allow_html=True)
+    st.markdown("<p class='sidebar-text'>Training System v2.0</p>", unsafe_allow_html=True)
     st.divider()
-    st.write(f"📊 Hệ thống: **100 Câu thực chiến**")
-    st.write(f"🏷️ Trạng thái: **Đang hoạt động**")
-    st.divider()
-    if st.button("🔄 LÀM MỚI BỘ ĐỀ"):
+    st.write(f"📂 Bộ đề: **{len(QUESTIONS)} câu**")
+    if st.button("🔄 LÀM MỚI"):
         st.session_state.clear()
         st.rerun()
 
-# --- LOGIC APP ---
+# --- LOGIC XỬ LÝ ---
 if 'current_q' not in st.session_state:
     st.session_state.current_q = random.choice(QUESTIONS)
     st.session_state.answered = False
-    st.session_state.choice = None
+    st.session_state.user_choice = None
 
-def next_q():
+def go_next():
     st.session_state.current_q = random.choice(QUESTIONS)
     st.session_state.answered = False
-    st.session_state.choice = None
+    st.session_state.user_choice = None
 
 q = st.session_state.current_q
 
 # --- GIAO DIỆN CHÍNH ---
-st.title("🛡️ Đào Tạo Chiến Binh IUL")
-st.write("Dành riêng cho đội ngũ Agent Thinksmart Insurance")
-
-# Hiển thị câu hỏi trong khung Card
 st.markdown(f"""
-    <div class="question-card">
-        <span style="color: #d4af37; font-weight: bold;">CÂU HỎI #{q['id']}</span>
-        <p style="font-size: 22px; margin-top: 10px;">{q['question']}</p>
+    <div class="question-container">
+        <p style="color: #D4AF37; font-weight: bold; letter-spacing: 2px;">CÂU HỎI #{q['id']}</p>
+        <h2 style="color: white; font-family: 'Segoe UI', sans-serif; line-height: 1.4;">{q['question']}</h2>
     </div>
     """, unsafe_allow_html=True)
 
-# Các nút đáp án
-for opt in q['options']:
-    if st.button(opt, disabled=st.session_state.answered, key=opt):
-        st.session_state.choice = opt
+# Hiển thị 4 đáp án (cân chỉnh dòng đàng hoàng)
+for option in q['options']:
+    # Kiểm tra nếu đã trả lời thì highlight đáp án đúng/sai bằng icon
+    btn_label = option
+    if st.session_state.answered:
+        if option == q['answer']:
+            btn_label = f"✅ {option}"
+        elif option == st.session_state.user_choice:
+            btn_label = f"❌ {option}"
+
+    if st.button(btn_label, key=option, disabled=st.session_state.answered):
+        st.session_state.user_choice = option
         st.session_state.answered = True
         st.rerun()
 
-# Hiển thị kết quả và giải thích sâu sắc
+# HIỂN THỊ KẾT QUẢ VÀ GIẢI THÍCH (Hiển thị ngay không cần Expander)
 if st.session_state.answered:
-    st.markdown("---")
-    if st.session_state.choice == q['answer']:
-        st.success("🎯 **CHÍNH XÁC!** Bạn nắm bắt tâm lý rất tốt.")
+    if st.session_state.user_choice == q['answer']:
+        st.success("**CHÍNH XÁC!**")
     else:
-        st.error(f"🔴 **CẦN XEM LẠI!** Đáp án đúng là: **{q['answer']}**")
+        st.error(f"**CHƯA ĐÚNG!** Đáp án chính xác là: {q['answer']}")
     
-    with st.expander("📝 XEM GIẢI THÍCH TỪ MANAGER (ANH CÔNG)", expanded=True):
-        st.write(q['explanation'])
+    # Khung giải thích chuyên sâu
+    st.markdown(f"""
+        <div class="explanation-box">
+            <h4 style="color: #001E3E; margin-top: 0;">💡 TƯ DUY CHIẾN THUẬT:</h4>
+            <p style="color: #444; line-height: 1.6; font-size: 16px;">{q['explanation']}</p>
+        </div>
+        """, unsafe_allow_html=True)
     
     st.write("")
-    if st.button("TIẾP TỤC BỐC QUẺ ➡️", type="primary"):
-        next_q()
+    if st.button("TIẾP TỤC THỬ THÁCH ➡️", type="primary"):
+        go_next()
         st.rerun()
+
+st.markdown("---")
+st.caption("Duy trì sự đúng đắn • Thinksmart Insurance 2026")
