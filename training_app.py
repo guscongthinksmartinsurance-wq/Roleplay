@@ -5,18 +5,26 @@ from quiz_data import QUESTIONS
 # --- CẤU HÌNH GIAO DIỆN ---
 st.set_page_config(page_title="Thinksmart Training", page_icon="🛡️", layout="centered")
 
-# CSS Tập trung đúng yêu cầu: Sidebar Vàng lấp lánh và giữ nguyên các phần còn lại
+# CSS Tập trung đúng yêu cầu: Sidebar Vàng lấp lánh chuyển động và giữ nguyên các phần còn lại
 st.markdown("""
     <style>
-    /* 1. SIDEBAR CHỮ VÀNG LẤP LÁNH (GOLDEN SPARKLE) */
+    /* 1. SIDEBAR CHỮ VÀNG LẤP LÁNH & CHUYỂN ĐỘNG */
+    @keyframes shine {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
     [data-testid="stSidebar"] .stMarkdown p, 
     [data-testid="stSidebar"] h3, 
     [data-testid="stSidebar"] span {
-        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background: linear-gradient(to right, #BF953F 20%, #FCF6BA 40%, #B38728 60%, #FBF5B7 80%, #AA771C 100%);
+        background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold !important;
         font-size: 20px !important;
+        animation: shine 3s linear infinite; /* Hiệu ứng ánh kim chạy qua chạy lại */
         text-shadow: 1px 1px 2px rgba(0,0,0,0.1) !important;
         display: inline-block;
     }
@@ -43,7 +51,7 @@ st.markdown("""
         box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
     }
 
-    /* KHUNG GIẢI THÍCH NAVY & GOLD (GIỮ NGUYÊN) */
+    /* 3. KHUNG GIẢI THÍCH NAVY & GOLD (GIỮ NGUYÊN) */
     .explanation-container {
         background-color: #002B5C;
         padding: 25px;
@@ -62,7 +70,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR (CHỮ VÀNG LẤP LÁNH) ---
+# --- SIDEBAR (CHỮ VÀNG LẤP LÁNH CHUYỂN ĐỘNG) ---
 with st.sidebar:
     st.markdown("### THINKSMART")
     st.markdown("Training System")
