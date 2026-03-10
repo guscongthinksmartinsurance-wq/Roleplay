@@ -5,10 +5,8 @@ from quiz_data import QUESTIONS
 # --- CẤU HÌNH GIAO DIỆN ---
 st.set_page_config(page_title="Thinksmart Training", page_icon="🛡️", layout="centered")
 
-# CSS Tập trung đúng yêu cầu: Sidebar Vàng lấp lánh chuyển động và giữ nguyên các phần còn lại
 st.markdown("""
     <style>
-    /* 1. SIDEBAR CHỮ VÀNG LẤP LÁNH & CHUYỂN ĐỘNG */
     @keyframes shine {
         0% { background-position: 0% 50%; }
         50% { background-position: 100% 50%; }
@@ -29,7 +27,6 @@ st.markdown("""
         display: inline-block;
     }
 
-    /* 2. HIỆU ỨNG HOVER CHO 4 NÚT TRẮC NGHIỆM (GIỮ NGUYÊN) */
     .stButton>button {
         width: 100%;
         text-align: left !important;
@@ -51,7 +48,6 @@ st.markdown("""
         box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
     }
 
-    /* 3. KHUNG GIẢI THÍCH NAVY & GOLD (GIỮ NGUYÊN) */
     .explanation-container {
         background-color: #002B5C;
         padding: 25px;
@@ -70,9 +66,8 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR (CHỮ VÀNG LẤP LÁNH CHUYỂN ĐỘNG) ---
 with st.sidebar:
-    st.markdown("### THINKSMART")
+    st.markdown("### THINKSMART INSURANCE")
     st.markdown("Training System")
     st.markdown(f"Tiến độ: {len(QUESTIONS)} câu")
     if st.button("Làm mới bộ đề"):
@@ -92,11 +87,9 @@ def next_q():
 
 q = st.session_state.current_q
 
-# --- GIAO DIỆN CHÍNH ---
 st.markdown(f"<p style='color: #D4AF37; font-weight: bold;'>CÂU HỎI #{q['id']}</p>", unsafe_allow_html=True)
 st.markdown(f"<div class='question-text'>{q['question']}</div>", unsafe_allow_html=True)
 
-# 4 Đáp án trắc nghiệm
 for opt in q['options']:
     label = opt
     if st.session_state.answered:
@@ -110,7 +103,6 @@ for opt in q['options']:
         st.session_state.answered = True
         st.rerun()
 
-# PHẦN GIẢI THÍCH (GIỮ NGUYÊN)
 if st.session_state.answered:
     st.markdown(f"""
         <div class="explanation-container">
@@ -123,3 +115,4 @@ if st.session_state.answered:
     if st.button("TIẾP TỤC ➡️", type="primary"):
         next_q()
         st.rerun()
+
