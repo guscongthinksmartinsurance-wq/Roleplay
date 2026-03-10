@@ -337,14 +337,14 @@ QUESTIONS += [
 
 QUESTIONS += [
     {
-        "id": 41,
+        "id": 39,
         "question": "Quyền lợi bệnh mù (Blindness) KHÔNG có ở tiểu bang nào sau đây?",
         "options": ["Georgia", "Texas", "Washington", "California"],
         "answer": "California",
         "explanation": "Mỗi tiểu bang tại Mỹ có luật bảo hiểm riêng. California là bang có quy định khắt khe và khác biệt nhất. Nắm vững điều này giúp Sale tránh tư vấn sai quyền lợi cho khách ở vùng này."
     },
     {
-        "id": 42,
+        "id": 40,
         "question": "Tại New York (NY), quyền lợi Critical Illness chỉ bao gồm những bệnh nào?",
         "options": [
             "Chỉ ung thư",
@@ -356,21 +356,21 @@ QUESTIONS += [
         "explanation": "New York là thị trường đặc thù. Danh sách bệnh nan y ở đây ngắn hơn so với 50 bang khác. Đây là kiến thức kỹ thuật quan trọng để không hứa hẹn quá mức với khách hàng tại NY."
     },
     {
-        "id": 43,
+        "id": 41,
         "question": "Sales có thể tìm kiếm nguồn data khách hàng ngoài nguồn công ty cung cấp không?",
         "options": ["Không được phép", "Được phép hoàn toàn", "Phải xin phép CEO mỗi lần tìm", "Chỉ được tìm trên Facebook"],
         "answer": "Được phép hoàn toàn",
         "explanation": "Văn phòng khuyến khích sự chủ động. Một Sale giỏi là người biết tận dụng nguồn lực công ty và đồng thời tự xây dựng 'ao cá' riêng cho mình thông qua các mối quan hệ xã hội."
     },
     {
-        "id": 44,
+        "id": 42,
         "question": "Việc mang dữ liệu công ty (thông tin khách hàng, công nghệ...) phục vụ mục đích cá nhân bị xử lý thế nào?",
         "options": ["Được khuyến khích", "Chỉ bị nhắc nhở", "Vi phạm nghiêm trọng quy định và đạo đức nghề nghiệp (nghiêm cấm)", "Được phép nếu chia sẻ cho người thân"],
         "answer": "Vi phạm nghiêm trọng quy định và đạo đức nghề nghiệp (nghiêm cấm)",
         "explanation": "Sự đúng đắn và trung thực là 'máu' của Thinksmart. Data là tài sản, bảo vệ tài sản công ty cũng là bảo vệ bát cơm của chính mình và đồng đội."
     },
     {
-        "id": 45,
+        "id": 43,
         "question": "Nếu gọi trúng khách hàng cũ của văn phòng, bước đầu tiên Sales cần làm gì?",
         "options": [
             "Cúp máy ngay lập tức",
@@ -382,35 +382,35 @@ QUESTIONS += [
         "explanation": "Bán bảo hiểm là bán niềm tin lâu dài. Việc trân trọng sự tin tưởng cũ của khách hàng giúp khẳng định uy tín văn phòng, tạo tiền đề tốt để thăm hỏi và nâng cấp quyền lợi cho họ."
     },
     {
-        "id": 46,
+        "id": 44,
         "question": "Nếu Sales khơi gợi được khách hàng cũ mua thêm hồ sơ cho chính họ, hoa hồng sẽ được tính như thế nào?",
         "options": ["Nhận 100%", "Chia % theo chính sách công ty (Split Case)", "Không được nhận hoa hồng", "Nhận 10%"],
         "answer": "Chia % theo chính sách công ty (Split Case)",
         "explanation": "Luật 'Split Case' đảm bảo sự công bằng giữa người gieo hạt đầu tiên và người chăm sóc sau này. Nó tạo ra một môi trường làm việc văn minh, không tranh giành khách của nhau."
     },
     {
-        "id": 47,
+        "id": 45,
         "question": "Nếu khai thác được người thân/bạn bè của khách cũ (họ tự quyết định hồ sơ), Sales nhận bao nhiêu hoa hồng?",
         "options": ["50%", "75%", "100% và tự chăm sóc khách hàng đó", "Không được tính vì là khách liên quan"],
         "answer": "100% và tự chăm sóc khách hàng đó",
         "explanation": "Khai thác khách mới hoàn toàn dựa trên uy tín cá nhân là nỗ lực xứng đáng được hưởng 100% thành quả. Đây là động lực để bạn xây dựng mạng lưới khách hàng giới thiệu (Referral)."
     },
     {
-        "id": 48,
+        "id": 46,
         "question": "Số điện thoại của bộ phận Chăm sóc khách hàng (CS) là gì?",
         "options": ["(678) 123-4567", "(678) 825-3737", "(770) 825-3737", "(678) 999-8888"],
         "answer": "(678) 825-3737",
         "explanation": "Đây là con số 'cứu cánh' giúp Sale duy trì dịch vụ sau bán hàng. Thuộc lòng số này thể hiện sự chuyên nghiệp khi giải đáp thắc mắc của khách hàng ngay lập tức."
     },
     {
-        "id": 49,
+        "id": 47,
         "question": "Khi lịch hẹn của Sales đã full nhưng bạn có khách tiềm năng vào ban đêm, bạn nên làm gì?",
         "options": ["Bỏ khách hàng đó", "Đặt đại vào giờ đã có người", "Inbox riêng cho Sales để đưa thêm \"lịch lót\"", "Yêu cầu khách hàng gọi lại vào tuần sau"],
         "answer": "Inbox riêng cho Sales để đưa thêm \"lịch lót\"",
         "explanation": "Tinh thần đồng đội và sự linh hoạt của Manager giúp tối ưu hóa mọi cơ hội. 'Lịch lót' là giải pháp để không bỏ rơi bất kỳ khách hàng tiềm năng nào."
     },
     {
-        "id": 50,
+        "id": 48,
         "question": "Theo quy định, Sales cần làm gì sau khi hãng bảo hiểm rút tiền thành công từ tài khoản khách?",
         "options": [
             "Không cần làm gì thêm",
@@ -422,7 +422,7 @@ QUESTIONS += [
         "explanation": "Việc rút tiền chỉ là bước đầu. Ký Policy Receipt mới là thủ tục pháp lý quan trọng nhất để kích hoạt quyền lợi dùng thử 30 ngày cho khách và chốt đơn hoàn toàn."
     },
     {
-        "id": 51,
+        "id": 49,
         "question": "Khách nói: \"IUL có bao lỗ không? Lỡ thị trường sập thì tiền tôi mất trắng sao?\"",
         "options": [
             "\"Dạ không sao đâu, anh cứ yên tâm vào hãng.",
@@ -434,7 +434,7 @@ QUESTIONS += [
         "explanation": "Dùng tâm lý học tương phản: Đặt khách vào sự lựa chọn giữa 'an toàn tuyệt đối' và 'mạo hiểm trắng tay'. Floor 0% chính là điểm tựa tâm lý lớn nhất để khách ngủ ngon."
     },
     {
-        "id": 52,
+        "id": 50,
         "question": "Khách thắc mắc: \"Tại sao mức lãi tối đa (Cap rate) lại bị giới hạn ở 8-11%?\"",
         "options": [
             "\"Vì hãng cần giữ lại tiền để trả lương cho nhân viên.\"",
@@ -446,7 +446,7 @@ QUESTIONS += [
         "explanation": "Giải thích logic của sự cân bằng. Trên đời không có gì là miễn phí, mức trần là cái phí hợp lý để mua sự bảo đảm mức sàn không bao giờ âm."
     },
     {
-        "id": 53,
+        "id": 51,
         "question": "Khách nói: \"Tôi thà bỏ tiền vào 401k/IRA để được công ty match tiền.\"",
         "options": [
             "\"Dạ 401k tốt, nhưng khi rút ra anh phải đóng thuế rất cao theo biểu thuế tương lai. IUL cho phép anh rút tiền qua hình thức vay không thuế. Anh muốn cầm 100 đồng hay cầm 70 đồng sau khi nộp thuế?\"",
@@ -458,7 +458,7 @@ QUESTIONS += [
         "explanation": "Đánh vào nỗi sợ lớn nhất của người Mỹ: Thuế. So sánh số tiền 'thực nhận' (Net income) thay vì số tiền trên giấy tờ để khách thấy giá trị của việc miễn thuế."
     },
     {
-        "id": 54,
+        "id": 52,
         "question": "Khách hỏi: \"Phí bảo hiểm (Cost of Insurance) tăng theo tuổi, vậy sau này tiền lời có đủ bù không?\"",
         "options": [
             "\"Dạ nếu mình đóng đúng và đủ theo thiết kế 'Overfund' ngay từ đầu, dòng tiền sẽ tự nuôi hồ sơ. Anh muốn một cái cây tự lớn hay một cái cây phải tưới nước suốt đời?\"",
@@ -470,7 +470,7 @@ QUESTIONS += [
         "explanation": "Sử dụng ẩn dụ 'cái cây' để khách dễ hình dung. Chiến thuật 'Overfund' là nền tảng để biến IUL thành một tài sản tự vận hành bền vững."
     },
     {
-        "id": 55,
+        "id": 53,
         "question": "Khách nói: \"Tôi mua nhà cho thuê lãi hơn mua IUL.\"",
         "options": [
             "\"Nhà có thể cháy, không người thuê, nhưng IUL bảo đảm tiền mặt ngay khi anh cần (bệnh tật). Anh nên có IUL để lỡ có chuyện gì, gia đình có tiền trả dứt nợ nhà. Anh muốn để lại cho con căn nhà nợ hay căn nhà sạch?\"",
@@ -482,7 +482,7 @@ QUESTIONS += [
         "explanation": "So sánh tính thanh khoản và mục đích. Bất động sản là để tấn công (lời), còn IUL là để phòng thủ (bảo vệ căn nhà). Bạn cần cả hai để tài chính thực sự vững vàng."
     },
     {
-        "id": 56,
+        "id": 54,
         "question": "Khách hỏi: \"Tại sao tôi phải đợi 10-15 năm mới thấy tiền lời nhiều?\"",
         "options": [
             "\"Vì đây là kế hoạch hưu trí dài hạn, không phải tài khoản tiết kiệm rút nhanh. Anh xây nhà cũng cần thời gian đổ móng, IUL cũng vậy. Anh muốn móng chắc hay muốn xây nhà trên cát?\"",
@@ -494,7 +494,7 @@ QUESTIONS += [
         "explanation": "Quản lý kỳ vọng của khách hàng. IUL là một cuộc marathon hưu trí, sự chân thành về thời gian giúp xây dựng niềm tin lâu dài thay vì hứa hão."
     },
     {
-        "id": 57,
+        "id": 55,
         "question": "Khách lo lắng: \"Nếu hãng National Life Group phá sản thì sao?\"",
         "options": [
             "\"Hãng giàu lắm, không bao giờ phá sản được.\"",
@@ -506,7 +506,7 @@ QUESTIONS += [
         "explanation": "Dùng bề dày lịch sử làm bằng chứng thép. Một hãng tồn tại hơn 170 năm là một pháo đài tài chính đã được thử thách qua mọi giông bão."
     },
     {
-        "id": 58,
+        "id": 56,
         "question": "Khách hỏi về quyền lợi \"Overloan Protection Rider\":",
         "options": [
             "\"Cái này để bảo vệ anh không bị mất hồ sơ khi rút quá nhiều tiền vay lúc già, tránh bị đánh thuế từ IRS. Anh muốn xài tiền thoải mái hay muốn bị chính phủ đòi thuế?\"",
@@ -518,7 +518,7 @@ QUESTIONS += [
         "explanation": "Đây là kỹ thuật chuyên môn cao. Giải thích lợi ích của nó giúp Sale trông giống một chuyên gia tài chính thực thụ, am hiểu về luật thuế Mỹ."
     },
     {
-        "id": 59,
+        "id": 57,
         "question": "Khách muốn rút hết tiền mặt (Surrender) sau 3 năm tham gia:",
         "options": [
             "\"Dạ được, anh rút đi em làm thủ tục cho.\"",
@@ -530,7 +530,7 @@ QUESTIONS += [
         "explanation": "Ngăn cản khách hàng làm điều có hại cho chính họ. Sự thẳng thắn này thể hiện cái tâm của người tư vấn, bảo vệ thành quả tích lũy của khách."
     },
     {
-        "id": 60,
+        "id": 58,
         "question": "Khách hỏi: \"Tại sao lãi suất minh họa là 6-7% mà thực tế năm nay tôi nhận ít hơn?\"",
         "options": [
             "\"Vì thị trường năm nay xấu, hãng không có tiền trả.\"",
@@ -543,6 +543,248 @@ QUESTIONS += [
     }
 ]
 
+QUESTIONS += [
+    {
+        "id": 61,
+        "question": "Khách nói: \"Để tôi suy nghĩ thêm, khi nào cần tôi gọi lại.\"",
+        "options": [
+            "\"Dạ vâng, khi nào anh nghĩ xong thì báo em.\"",
+            "\"Em hiểu anh cần cân nhắc. Nhưng rủi ro không đợi mình suy nghĩ. Anh đang lo về phí hay còn điểm nào em giải thích chưa rõ để anh yên tâm bảo vệ gia đình ngay hôm nay?\"",
+            "\"Anh suy nghĩ lâu là phí tăng đó, mua ngay đi.\"",
+            "\"Để em gửi thêm 10 cái video cho anh xem rồi suy nghĩ tiếp.\""
+        ],
+        "answer": "\"Em hiểu anh cần cân nhắc. Nhưng rủi ro không đợi mình suy nghĩ. Anh đang lo về phí hay còn điểm nào em giải thích chưa rõ để anh yên tâm bảo vệ gia đình ngay hôm nay?\"",
+        "explanation": "Kỹ thuật cô lập sự từ chối. 'Suy nghĩ thêm' thường là tấm màn che cho một nỗi sợ về tiền hoặc sự thiếu tin tưởng. Sale cần đào sâu để giải quyết ngay điểm đó."
+    },
+    {
+        "id": 62,
+        "question": "Khách nói: \"Tôi chưa bao giờ nghe tên Thinksmart Insurance, sợ không uy tín.\"",
+        "options": [
+            "Dạ công ty em thành lập từ 2013, phục vụ hơn 10.000 khách rồi anh.",
+            "Dạ, anh thấy lạ là vì chúng em tập trung làm việc sâu sát cho cộng đồng chứ không quảng cáo rầm rộ. Quan trọng là tụi em có giấy phép trên 50 tiểu bang và đại diện cho các hãng lớn như NLG. Tiền của anh là do hãng giữ chứ văn phòng không giữ, anh an tâm chưa?",
+            "Anh có thể lên Google tìm Thinksmart Insurance là thấy ngay.",
+            "Dạ, tụi em có văn phòng ở Georgia và California, anh có thể ghé thăm."
+        ],
+        "answer": "Dạ, anh thấy lạ là vì chúng em tập trung làm việc sâu sát cho cộng đồng chứ không quảng cáo rầm rộ. Quan trọng là tụi em có giấy phép trên 50 tiểu bang và đại diện cho các hãng lớn như NLG. Tiền của anh là do hãng giữ chứ văn phòng không giữ, anh an tâm chưa?",
+        "explanation": "Xây dựng niềm tin bằng sự minh bạch. Khẳng định vai trò là đại diện hãng lớn và tiền của khách luôn được hãng quản lý an toàn theo luật pháp Mỹ."
+    },
+    {
+        "id": 63,
+        "question": "Khi khách lo ngại về việc làm việc Online: \"Lỡ có chuyện gì tôi biết tìm ai ở đâu?\"",
+        "options": [
+            "Thời buổi này ai cũng làm online mà anh, anh đừng lo quá.",
+            "Dạ em hiểu, tiền bạc là phải cẩn thận. Quy trình là hãng rút tiền trực tiếp từ ngân hàng anh, không qua tay em. Anh có 30 ngày dùng thử (Free look), nếu thấy không đúng anh có quyền hủy và lấy lại tiền.",
+            "Anh chị có thể ghé văn phòng tại Georgia hoặc California, nhưng vui lòng báo trước để em sắp xếp đón tiếp chu đáo.",
+            "Dạ tụi em có giấy phép trên 50 tiểu bang, luật pháp Mỹ bảo vệ anh chị nên không mất đi đâu được."
+        ],
+        "answer": "Anh chị có thể ghé văn phòng tại Georgia hoặc California, nhưng vui lòng báo trước để em sắp xếp đón tiếp chu đáo.",
+        "explanation": "Sử dụng địa điểm vật lý để củng cố niềm tin. Khi khách biết mình có văn phòng thật tại Mỹ, nỗi sợ về việc 'biến mất' trên mạng sẽ được giải tỏa."
+    },
+    {
+        "id": 64,
+        "question": "Nếu khách hàng tìm thấy nhiều trang web khác nhau và nghi ngờ lừa đảo, bạn nên làm gì?",
+        "options": [
+            "Khẳng định chỉ có thinksmartinsurance.com là website chính thức để khách kiểm tra thông tin.",
+            "Bảo khách đừng quan tâm đến website, chỉ cần tin lời Sales là đủ.",
+            "Nói xấu các trang web khác để nâng tầm mình lên.",
+            "Kêu khách tự chọn trang nào cũng được."
+        ],
+        "answer": "Khẳng định chỉ có thinksmartinsurance.com là website chính thức để khách kiểm tra thông tin.",
+        "explanation": "Sự nhất quán trong thông tin là chìa khóa của sự chuyên nghiệp. Website chính thức là bộ mặt pháp lý của văn phòng trên môi trường số."
+    },
+    {
+        "id": 65,
+        "question": "Khách hỏi: \"Tại sao tôi phải chọn Thinksmart mà không phải chỗ khác?\"",
+        "options": [
+            "Vì tụi em giỏi nhất.",
+            "Vì tụi em có nhiều quà tặng kèm theo.",
+            "Vì tụi em tư vấn bằng sự chân thành, thái độ mộc mạc và luôn đặt quyền lợi gia đình anh chị lên trên hết thay vì chỉ nói về những con số lợi nhuận khổng lồ.",
+            "Vì tụi em có trụ sở ở Georgia."
+        ],
+        "answer": "Vì tụi em tư vấn bằng sự chân thành, thái độ mộc mạc và luôn đặt quyền lợi gia đình anh chị lên trên hết thay vì chỉ nói về những con số lợi nhuận khổng lồ.",
+        "explanation": "Khác biệt hóa dịch vụ bằng sự mộc mạc và chân thành. Khách hàng nể người quan tâm đến họ thực sự hơn là người chỉ thao thao bất tuyệt về tiền bạc."
+    },
+    {
+        "id": 66,
+        "question": "Khách hỏi: \"Giấy phép kinh doanh của các bạn có hợp lệ không?\"",
+        "options": [
+            "Dạ có, văn phòng có license trên 50 tiểu bang tại Mỹ.",
+            "Anh chị cứ mua đi, không có license sao tụi em dám bán.",
+            "Chỉ có license ở Georgia và Texas thôi ạ.",
+            "Em không biết, để em hỏi lại sếp."
+        ],
+        "answer": "Dạ có, văn phòng có license trên 50 tiểu bang tại Mỹ.",
+        "explanation": "Khẳng định tính pháp lý tuyệt đối. Làm việc với đại lý có license 50 bang cho thấy quy mô và sự chuyên nghiệp nghiêm túc của Thinksmart."
+    },
+    {
+        "id": 67,
+        "question": "Khách nói: \"Tôi có bảo hiểm sức khỏe rồi, không cần IUL.\"",
+        "options": [
+            "IUL hay hơn bảo hiểm sức khỏe nhiều anh ơi.",
+            "Dạ đúng, nhưng bảo hiểm sức khỏe trả tiền cho bác sĩ, còn Living Benefits của IUL trả tiền mặt vào tay anh chị để trang trải cuộc sống khi anh chị không thể đi làm.",
+            "Bảo hiểm sức khỏe không tốt bằng bảo hiểm nhân thọ.",
+            "Anh nên hủy ObamaCare để mua IUL cho tiết kiệm."
+        ],
+        "answer": "Dạ đúng, nhưng bảo hiểm sức khỏe trả tiền cho bác sĩ, còn Living Benefits của IUL trả tiền mặt vào tay anh chị để trang trải cuộc sống khi anh chị không thể đi làm.",
+        "explanation": "Phân biệt công năng: Bảo hiểm sức khỏe là cho bệnh viện, IUL là cho chính gia đình khách. IUL bù đắp phần thu nhập bị mất khi bạo bệnh."
+    },
+    {
+        "id": 68,
+        "question": "Khách thắc mắc: \"Tại sao tôi phải mua IUL khi còn trẻ và khỏe?\"",
+        "options": [
+            "Vì mua sớm thì nhanh giàu.",
+            "Để dành tiền sau này đi du lịch.",
+            "Vì khi trẻ phí rẻ và quan trọng là anh chị dễ được chấp nhận các quyền lợi sống (Critical/Chronic) mà không bị rating cao hoặc từ chối.",
+            "Vì đây là quy định của hãng."
+        ],
+        "answer": "Vì khi trẻ phí rẻ và quan trọng là anh chị dễ được chấp nhận các quyền lợi sống (Critical/Chronic) mà không bị rating cao hoặc từ chối.",
+        "explanation": "Kiến thức về thẩm định bảo hiểm (Underwriting). Trẻ và khỏe là 'vốn' để mua được gói bảo vệ rộng nhất với chi phí thấp nhất."
+    },
+    {
+        "id": 69,
+        "question": "Khách ở New York (NY) nói: \"Tôi nghe nói IUL ở đâu cũng giống nhau?\"",
+        "options": [
+            "Dạ không, riêng tại NY, quyền lợi Critical Illness chỉ giới hạn ở một số bệnh nhất định như ung thư, đột quỵ, suy thận... chứ không đủ 16 bệnh như bang khác.",
+            "Dạ đúng, bang nào cũng như nhau hết.",
+            "NY là bang tốt nhất để mua bảo hiểm.",
+            "Chỉ có NY mới có quyền lợi Critical Injury."
+        ],
+        "answer": "Dạ không, riêng tại NY, quyền lợi Critical Illness chỉ giới hạn ở một số bệnh nhất định như ung thư, đột quỵ, suy thận... chứ không đủ 16 bệnh như bang khác.",
+        "explanation": "Kiến thức thị trường vùng miền. NY có những quy định riêng khắt khe về bảo hiểm, Sale cần nắm vững để tư vấn chính xác quyền lợi tại đây."
+    },
+    {
+        "id": 70,
+        "question": "Một khách hàng 61 tuổi muốn thêm quyền lợi Alzheimer, bạn xử lý thế nào?",
+        "options": [
+            "Dạ được, anh cứ ký hồ sơ đi.",
+            "Dạ rất tiếc, theo quy định quyền lợi Alzheimer chỉ dành cho người tham gia từ 0 đến 60 tuổi.",
+            "Dạ anh phải sống ở New York mới mua được.",
+            "Anh phải có rating sức khỏe Elite mới mua được."
+        ],
+        "answer": "Dạ rất tiếc, theo quy định quyền lợi Alzheimer chỉ dành cho người tham gia từ 0 đến 60 tuổi.",
+        "explanation": "Quy tắc sản phẩm của hãng. Tuân thủ đúng giới hạn độ tuổi giúp Sale làm việc chuẩn xác và tránh gây kỳ vọng sai cho khách hàng lớn tuổi."
+    },
+    {
+        "id": 71,
+        "question": "Khách hỏi: \"Bệnh mãn tính (Chronic) là phải nằm thực vật mới được trả tiền đúng không?\"",
+        "options": [
+            "Dạ đúng, phải nằm một chỗ mới được claim.",
+            "Dạ không cần nặng vậy, chỉ cần bác sĩ xác nhận anh chị không tự làm được 2/6 hoạt động sinh hoạt (tắm, ăn, mặc đồ...) trong ít nhất 90 ngày.",
+            "Chỉ cần đau lưng là được claim rồi.",
+            "Phải chờ 2 năm sau khi ký hợp đồng mới được claim."
+        ],
+        "answer": "Dạ không cần nặng vậy, chỉ cần bác sĩ xác nhận anh chị không tự làm được 2/6 hoạt động sinh hoạt (tắm, ăn, mặc đồ...) trong ít nhất 90 ngày.",
+        "explanation": "Làm rõ định nghĩa Chronic. Chỉ cần mất chức năng sinh hoạt cơ bản (ADLs) là đã được hỗ trợ tài chính, giúp khách chủ động thuê người chăm sóc."
+    },
+    {
+        "id": 72,
+        "question": "Khách hỏi: \"Tôi bị đứt tay, trầy xước có được claim Critical Injury không?\"",
+        "options": [
+            "Dạ được, cứ thương tích là được trả tiền.",
+            "Dạ không, Critical Injury chỉ dành cho các trường hợp nặng như phỏng nặng, chấn thương sọ não, hôn mê nằm ICU...",
+            "Anh chị phải chờ 30 ngày mới được claim.",
+            "Chỉ áp dụng nếu anh chị ở bang New York."
+        ],
+        "answer": "Dạ không, Critical Injury chỉ dành cho các trường hợp nặng như phỏng nặng, chấn thương sọ não, hôn mê nằm ICU...",
+        "explanation": "Phân loại biến cố. Critical Injury dành cho những thương tật lớn làm thay đổi cuộc đời, không phải những tai nạn sinh hoạt nhỏ lẻ."
+    },
+    {
+        "id": 73,
+        "question": "Khách lo lắng: \"Nếu tôi bị bệnh giai đoạn cuối, tôi phải chờ bao lâu mới có tiền?\"",
+        "options": [
+            "Quyền lợi Terminal Illness không có thời gian chờ kể từ khi hợp đồng có hiệu lực (issue).",
+            "Phải chờ 90 ngày ạ.",
+            "Phải chờ 2 năm mới được lấy tiền.",
+            "Tùy vào tâm trạng của hãng bảo hiểm."
+        ],
+        "answer": "Quyền lợi Terminal Illness không có thời gian chờ kể từ khi hợp đồng có hiệu lực (issue).",
+        "explanation": "Tính khẩn cấp của Terminal Illness. Hãng cho phép rút tiền ngay khi phát hiện bệnh để khách có nguồn lực điều trị tốt nhất mà không bị rào cản thời gian."
+    },
+    {
+        "id": 74,
+        "question": "“Tôi có được dùng tiền claim bệnh để trả nợ nhà không?”",
+        "options": [
+            "Dạ không, tiền đó chỉ được trả cho bệnh viện.",
+            "Dạ được, anh chị có toàn quyền sử dụng số tiền claim được cho bất kỳ mục đích cá nhân nào, không bắt buộc nộp hóa đơn.",
+            "Chỉ được dùng 50% thôi.",
+            "Phải có sự đồng ý của bác sĩ mới được xài tiền."
+        ],
+        "answer": "Dạ được, anh chị có toàn quyền sử dụng số tiền claim được cho bất kỳ mục đích cá nhân nào, không bắt buộc nộp hóa đơn.",
+        "explanation": "Sự tự do tài chính. Tiền claim là tài sản cá nhân của khách, giúp họ duy trì cuộc sống và các khoản nợ thay vì chỉ bó buộc vào tiền viện phí."
+    },
+    {
+        "id": 75,
+        "question": "Khách nói: “Để tôi suy nghĩ thêm, khi nào cần tôi gọi lại.”",
+        "options": [
+            "Dạ vâng, khi nào cần anh gọi em.",
+            "Anh không mua ngay là sau này hối hận đó.",
+            "Em hiểu anh cần cân nhắc, nhưng rủi ro thì không đợi mình suy nghĩ. Em xin phép xác nhận lại: Anh đang lo lắng về mức phí hay chưa rõ về quyền lợi nào để em giải thích thêm?",
+            "Cúp máy và gọi khách khác."
+        ],
+        "answer": "Em hiểu anh cần cân nhắc, nhưng rủi ro thì không đợi mình suy nghĩ. Em xin phép xác nhận lại: Anh đang lo lắng về mức phí hay chưa rõ về quyền lợi nào để em giải thích thêm?",
+        "explanation": "Tư duy quản lý lời từ chối. Phải xác định rõ 'nút thắt' của khách nằm ở đâu để tháo gỡ, thay vì chỉ chấp nhận sự trì hoãn."
+    },
+    {
+        "id": 76,
+        "question": "Khách hàng là Sales cũ của văn phòng khác gọi đến hỏi thăm, bạn nên làm gì?",
+        "options": [
+            "Chào mời họ mua thêm hồ sơ mới để lấy hoa hồng 100%.",
+            "Luôn lắng nghe, đặt câu hỏi làm rõ và duy trì thái độ chuyên nghiệp, không nói xấu đối thủ.",
+            "Cúp máy ngay lập tức vì không phải khách tiềm năng.",
+            "Xin data khách hàng của họ."
+        ],
+        "answer": "Luôn lắng nghe, đặt câu hỏi làm rõ và duy trì thái độ chuyên nghiệp, không nói xấu đối thủ.",
+        "explanation": "Văn hóa ứng xử chuyên nghiệp. Sự tử tế và chuyên môn của bạn là cách quảng bá tốt nhất cho thương hiệu Thinksmart."
+    },
+    {
+        "id": 77,
+        "question": "Khách hỏi: “Tại sao tôi phải ký cái Policy Receipt?”",
+        "options": [
+            "Ký cho vui thôi anh.",
+            "Dạ đây là xác nhận anh chị đã nhận hồ sơ, hãng bắt buộc ký trong vòng 30 ngày kể từ khi nhận để bảo đảm quyền lợi của anh chị được kích hoạt đầy đủ.",
+            "Ký để em được nhận hoa hồng.",
+            "Ký để hãng rút thêm tiền."
+        ],
+        "answer": "Dạ đây là xác nhận anh chị đã nhận hồ sơ, hãng bắt buộc ký trong vòng 30 ngày kể từ khi nhận để bảo đảm quyền lợi của anh chị được kích hoạt đầy đủ.",
+        "explanation": "Quy trình pháp lý. Ký nhận hồ sơ là bước chốt hạ để hợp đồng chính thức vận hành và bảo vệ tối đa quyền lợi khách hàng."
+    },
+    {
+        "id": 78,
+        "question": "Khi khách hàng than phiền về việc hãng bảo hiểm rút tiền chậm/nhanh hơn dự kiến:",
+        "options": [
+            "Lỗi tại hãng, không phải tại em.",
+            "Xin lỗi anh chị vì sự bất tiện, để em kiểm tra lại với bộ phận CS (678) 825-3737 và phản hồi anh chị ngay.",
+            "Anh chị tự gọi lên hãng mà hỏi.",
+            "Kêu khách hủy hồ sơ luôn cho đỡ phiền."
+        ],
+        "answer": "Xin lỗi anh chị vì sự bất tiện, để em kiểm tra lại với bộ phận CS (678) 825-3737 và phản hồi anh chị ngay.",
+        "explanation": "Dịch vụ sau bán hàng (After-sales). Phải đứng về phía khách hàng, nhận trách nhiệm hỗ trợ để họ luôn cảm thấy được quan tâm chăm sóc."
+    },
+    {
+        "id": 79,
+        "question": "Khách nói: “Vợ tôi không cho mua bảo hiểm.”",
+        "options": [
+            "Dạ, vậy thôi nghe lời vợ đi anh.",
+            "Em hiểu, nhưng nếu chẳng may có chuyện gì, người vất vả nhất chính là chị nhà và con cái. Anh muốn để lại một món quà bảo vệ hay để lại một gánh nặng tài chính cho gia đình?",
+            "Vợ anh không biết gì đâu, anh cứ mua đại đi.",
+            "Anh bảo vợ anh gọi cho em, em mắng cho."
+        ],
+        "answer": "Em hiểu, nhưng nếu chẳng may có chuyện gì, người vất vả nhất chính là chị nhà và con cái. Anh muốn để lại một món quà bảo vệ hay để lại một gánh nặng tài chính cho gia đình?",
+        "explanation": "Đánh vào tâm lý trách nhiệm của người trụ cột. Bảo hiểm là hành động yêu thương thực tế nhất dành cho những người thân yêu khi mình không còn ở bên."
+    },
+    {
+        "id": 80,
+        "question": "Khách hỏi: “Nếu tôi ngưng đóng tiền giữa chừng thì sao?”",
+        "options": [
+            "Dạ anh chị có thể dùng Cash Value tích lũy để đóng phí hoặc giảm mức bảo vệ xuống để duy trì hồ sơ. IUL rất linh hoạt ạ.",
+            "Hợp đồng mất hết hiệu lực ngay ạ.",
+            "Hãng sẽ kiện anh chị.",
+            "Anh chị đóng bù vào năm sau là được."
+        ],
+        "answer": "Dạ anh chị có thể dùng Cash Value tích lũy để đóng phí hoặc giảm mức bảo vệ xuống để duy trì hồ sơ. IUL rất linh hoạt ạ.",
+        "explanation": "Tính linh hoạt của dòng tiền IUL. Khách hàng cần biết họ có quyền 'tạm nghỉ' hoặc điều chỉnh theo hoàn cảnh tài chính mà không làm hỏng cả kế hoạch bảo vệ."
+    }
+]
 QUESTIONS += [
     {
         "id": 81,
@@ -774,3 +1016,4 @@ QUESTIONS += [
     },
 
 ]
+
