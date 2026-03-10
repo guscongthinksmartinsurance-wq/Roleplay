@@ -2,15 +2,60 @@ import streamlit as st
 import random
 from quiz_data import QUESTIONS
 
-# Cấu hình trang
-st.set_page_config(page_title="Thinksmart Training Center", page_icon="🎓", layout="centered")
+# --- CẤU HÌNH GIAO DIỆN CHUYÊN NGHIỆP ---
+st.set_page_config(
+    page_title="Thinksmart Training Center",
+    page_icon="🎓",
+    layout="centered"
+)
 
-# Giao diện tiêu đề
-st.title("🎓 HỆ THỐNG ĐÀO TẠO AGENT")
-st.subheader("Thinksmart Insurance - Chuyên nghiệp & Đúng đắn")
-st.divider()
+st.markdown("""
+    <style>
+    .main {
+        background-color: #f5f7f9;
+    }
+    .stButton>button {
+        width: 100%;
+        border-radius: 10px;
+        height: 3em;
+        background-color: white;
+        color: #002060;
+        border: 1px solid #002060;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .stButton>button:hover {
+        background-color: #002060;
+        color: white;
+    }
+    div[data-testid="stExpander"] {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    .question-box {
+        background-color: #002060;
+        padding: 20px;
+        border-radius: 15px;
+        color: white;
+        margin-bottom: 25px;
+        border-left: 8px solid #FFD700;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
-# Khởi tạo trạng thái câu hỏi trong session_state
+# --- SIDEBAR TINH GỌN ---
+with st.sidebar:
+    st.image("https://thinksmartinsurance.com/wp-content/uploads/2023/10/cropped-Thinksmart-Insurance-Logo.png", width=200) # Link logo minh họa
+    st.markdown("---")
+    st.markdown("### 🎓 LỘ TRÌNH ĐÀO TẠO")
+    st.info(f"Tổng bộ đề: **{len(QUESTIONS)} Câu**")
+    st.caption("Hãy tập trung vào tư duy xử lý tình huống thực tế thay vì chỉ nhớ đáp án.")
+    
+    if st.button("🔄 LÀM LẠI TỪ ĐẦU"):
+        st.session_state.clear()
+        st.rerun()
+
+# --- LOGIC XỬ LÝ ---
 if 'current_question' not in st.session_state:
     st.session_state.current_question = random.choice(QUESTIONS)
     st.session_state.answered = False
@@ -21,37 +66,47 @@ def next_question():
     st.session_state.answered = False
     st.session_state.user_choice = None
 
-# Hiển thị câu hỏi
+# --- GIAO DIỆN CHÍNH ---
+st.title("🛡️ CHIẾN BINH THINKSMART")
+st.write("Hệ thống luyện tập đối đáp & Kiến thức hưu trí Mỹ")
+
 q = st.session_state.current_question
 
-st.info(f"**CÂU HỎI SỐ {q['id']}**")
-st.markdown(f"### {q['question']}")
+# Khung hiển thị câu hỏi
+st.markdown(f"""
+    <div class="question-box">
+        <small>MÃ CÂU HỎI: #{q['id']}</small>
+        <br>
+        <p style="font-size: 20px; font-weight: 500;">{q['question']}</p>
+    </div>
+    """, unsafe_allow_html=True)
 
-# Hiển thị các lựa chọn dưới dạng nút bấm
+# Hiển thị các đáp án
+cols = st.columns(1) # Để dọc cho dễ đọc trên điện thoại
 for option in q['options']:
-    if st.button(option, use_container_width=True, disabled=st.session_state.answered):
+    if st.button(option, disabled=st.session_state.answered):
         st.session_state.user_choice = option
         st.session_state.answered = True
         st.rerun()
 
-# Xử lý sau khi trả lời
+# Phản hồi sau khi chọn
 if st.session_state.answered:
-    if st.session_state.user_choice == q['answer']:
-        st.success("✅ CHÍNH XÁC! Bạn nắm kiến thức rất tốt.")
-    else:
-        st.error(f"❌ CHƯA ĐÚNG. Đáp án đúng là: **{q['answer']}**")
-    
-    # Phần giải thích sâu sắc của anh Công
-    st.markdown("---")
-    st.markdown("#### 💡 TƯ DUY XỬ LÝ:")
-    st.write(q['explanation'])
-    
     st.divider()
-    if st.button("TIẾP TỤC BỐC QUẺ ➡️", on_click=next_question, type="primary"):
-        pass
+    if st.session_state.user_choice == q['answer']:
+        st.success("✨ **CHÍNH XÁC!** Bạn đang đi đúng hướng.")
+        st.balloons()
+    else:
+        st.error(f"⚠️ **CẦN LƯU Ý!** Đáp án đúng là: \n\n **{q['answer']}**")
+    
+    # Phần giải thích sâu sắc
+    with st.container():
+        st.markdown("#### 💡 TƯ DUY CỦA MANAGER:")
+        st.info(q['explanation'])
+        
+        if st.button("TIẾP TỤC THỬ THÁCH ➡️", type="primary"):
+            next_question()
+            st.rerun()
 
-# Chân trang
-st.sidebar.markdown("---")
-st.sidebar.write("📌 **Lưu ý cho Agent:**")
-st.sidebar.caption("Học không phải để đối phó, học để thấu hiểu tâm lý khách hàng và duy trì sự đúng đắn.")
-st.sidebar.caption(f"Tổng số câu hỏi: {len(QUESTIONS)}")
+# Footer
+st.markdown("---")
+st.caption("© 2026 Thinksmart Insurance Training System.")
