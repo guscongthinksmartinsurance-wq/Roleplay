@@ -3,7 +3,7 @@ import random
 from quiz_data import QUESTIONS
 
 # --- CẤU HÌNH GIAO DIỆN ---
-st.set_page_config(page_title="Thinksmart Training", page_icon="🛡️", layout="centered")
+st.set_page_config(page_title="Thinksmart Training", page_icon="🛠", layout="centered")
 
 st.markdown("""
     <style>
@@ -115,4 +115,5 @@ if st.session_state.answered:
     if st.button("TIẾP TỤC ➡️", type="primary"):
         next_q()
         st.rerun()
+
 
