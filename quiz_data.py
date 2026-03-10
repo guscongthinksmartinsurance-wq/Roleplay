@@ -349,10 +349,10 @@ QUESTIONS += [
         "options": [
             "Chỉ ung thư",
             "Chỉ đột quỵ",
-            "Bao gồm: Lou Gehrig’s, mù, ung thư, suy thận giai đoạn cuối, đau tim, cấy ghép nội tạng, đột quỵ",
+            "Bao gồm: mù, ung thư, suy thận giai đoạn cuối, đau tim, cấy ghép nội tạng, đột quỵ",
             "Tất cả 16 bệnh như các bang khác"
         ],
-        "answer": "Bao gồm: Lou Gehrig’s, mù, ung thư, suy thận giai đoạn cuối, đau tim, cấy ghép nội tạng, đột quỵ",
+        "answer": "Bao gồm: mù, ung thư, suy thận giai đoạn cuối, đau tim, cấy ghép nội tạng, đột quỵ",
         "explanation": "New York là thị trường đặc thù. Danh sách bệnh nan y ở đây ngắn hơn so với 50 bang khác. Đây là kiến thức kỹ thuật quan trọng để không hứa hẹn quá mức với khách hàng tại NY."
     },
     {
@@ -1016,5 +1016,6 @@ QUESTIONS += [
     },
 
 ]
+
 
 
