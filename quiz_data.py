@@ -120,8 +120,8 @@ QUESTIONS = [
         "id": 17,
         "question": "Mức bồi thường tối đa (maximum) cho các quyền lợi sống là bao nhiêu % giá trị bảo hiểm?",
         "options": ["50%", "75%", "90%", "100%"],
-        "answer": "100%",
-        "explanation": "NLG cho phép lấy hết tiền tử vong để cứu người khi còn sống. Đó chính là sự khác biệt giữa một hãng bảo hiểm có tâm và các hãng thông thường."
+        "answer": "90%",
+        "explanation": "NLG cho phép lấy tiền tử vong để cứu người khi còn sống. Đó chính là sự khác biệt giữa một hãng bảo hiểm có tâm và các hãng thông thường."
     },
     {
         "id": 18,
@@ -772,4 +772,5 @@ QUESTIONS += [
         "answer": "Duy trì sự đúng đắn, thấu hiểu tâm lý hành vi và bảo vệ khách hàng bằng sự chân thành, mộc mạc và kiến thức sâu sắc. Khách hàng là người thân, sự an tâm của họ là thành công của mình.",
         "explanation": "Đây là tôn chỉ của anh Công. Bán hàng bằng cái tâm và sự sâu sắc sẽ tạo nên sự khác biệt của Thinksmart so với phần còn lại."
     },
+
 ]
