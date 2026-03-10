@@ -23,9 +23,9 @@ QUESTIONS = [
     {
         "id": 4,
         "question": "Hiện tại văn phòng đã phục vụ khoảng bao nhiêu khách hàng?",
-        "options": ["5,000 khách hàng", "8,000 khách hàng", "10,000 khách hàng", "15,000 khách hàng"],
-        "answer": "10,000 khách hàng",
-        "explanation": "10,000 niềm tin là một áp lực nhưng cũng là một niềm tự hào. Khi nói con số này với khách, hãy nói bằng sự trân trọng sự tin tưởng của cộng đồng dành cho Thinksmart."
+        "options": ["5,000 khách hàng", "8,000 khách hàng", "10,000 khách hàng", "Hơn 15,000 khách hàng"],
+        "answer": "Hơn 15,000 khách hàng",
+        "explanation": "Hơn 15,000 niềm tin là một áp lực nhưng cũng là một niềm tự hào. Khi nói con số này với khách, hãy nói bằng sự trân trọng sự tin tưởng của cộng đồng dành cho Thinksmart."
     },
     {
         "id": 5,
@@ -1016,4 +1016,5 @@ QUESTIONS += [
     },
 
 ]
+
 
