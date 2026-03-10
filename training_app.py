@@ -2,111 +2,116 @@ import streamlit as st
 import random
 from quiz_data import QUESTIONS
 
-# --- CẤU HÌNH GIAO DIỆN CHUYÊN NGHIỆP ---
-st.set_page_config(
-    page_title="Thinksmart Training Center",
-    page_icon="🎓",
-    layout="centered"
-)
+# --- CẤU HÌNH UI/UX NÂNG CAO ---
+st.set_page_config(page_title="Thinksmart Training Center", page_icon="🛡️", layout="centered")
 
+# CSS để tùy biến giao diện Navy & Gold
 st.markdown("""
     <style>
-    .main {
-        background-color: #f5f7f9;
+    /* Tổng thể nền */
+    .stApp {
+        background-color: #f8f9fa;
     }
+    
+    /* Thanh Sidebar */
+    [data-testid="stSidebar"] {
+        background-color: #001e3e;
+        color: white;
+    }
+    
+    /* Khung câu hỏi (Card) */
+    .question-card {
+        background-color: #002b5c;
+        padding: 30px;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-left: 10px solid #d4af37;
+        margin-bottom: 30px;
+    }
+
+    /* Tùy chỉnh nút bấm đáp án */
     .stButton>button {
         width: 100%;
-        border-radius: 10px;
-        height: 3em;
+        border-radius: 12px;
+        border: 1.5px solid #002b5c;
         background-color: white;
-        color: #002060;
-        border: 1px solid #002060;
-        font-weight: bold;
-        transition: 0.3s;
+        color: #002b5c;
+        font-weight: 600;
+        padding: 15px;
+        transition: all 0.3s;
     }
+    
     .stButton>button:hover {
-        background-color: #002060;
+        background-color: #d4af37;
         color: white;
+        border-color: #d4af37;
     }
-    div[data-testid="stExpander"] {
-        border: none !important;
-        box-shadow: none !important;
-    }
-    .question-box {
-        background-color: #002060;
-        padding: 20px;
-        border-radius: 15px;
-        color: white;
-        margin-bottom: 25px;
-        border-left: 8px solid #FFD700;
+
+    /* Tiêu đề */
+    h1 {
+        color: #002b5c;
+        font-family: 'Times New Roman', serif;
     }
     </style>
     """, unsafe_allow_html=True)
 
-# --- SIDEBAR TINH GỌN ---
+# --- SIDEBAR CHỈNH CHU ---
 with st.sidebar:
-    st.image("https://thinksmartinsurance.com/wp-content/uploads/2023/10/cropped-Thinksmart-Insurance-Logo.png", width=200) # Link logo minh họa
-    st.markdown("---")
-    st.markdown("### 🎓 LỘ TRÌNH ĐÀO TẠO")
-    st.info(f"Tổng bộ đề: **{len(QUESTIONS)} Câu**")
-    st.caption("Hãy tập trung vào tư duy xử lý tình huống thực tế thay vì chỉ nhớ đáp án.")
-    
-    if st.button("🔄 LÀM LẠI TỪ ĐẦU"):
+    st.markdown("<h2 style='text-align: center; color: #d4af37;'>THINKSMART</h2>", unsafe_allow_html=True)
+    st.markdown("<p style='text-align: center; font-style: italic;'>Duy trì sự đúng đắn</p>", unsafe_allow_html=True)
+    st.divider()
+    st.write(f"📊 Hệ thống: **100 Câu thực chiến**")
+    st.write(f"🏷️ Trạng thái: **Đang hoạt động**")
+    st.divider()
+    if st.button("🔄 LÀM MỚI BỘ ĐỀ"):
         st.session_state.clear()
         st.rerun()
 
-# --- LOGIC XỬ LÝ ---
-if 'current_question' not in st.session_state:
-    st.session_state.current_question = random.choice(QUESTIONS)
+# --- LOGIC APP ---
+if 'current_q' not in st.session_state:
+    st.session_state.current_q = random.choice(QUESTIONS)
     st.session_state.answered = False
-    st.session_state.user_choice = None
+    st.session_state.choice = None
 
-def next_question():
-    st.session_state.current_question = random.choice(QUESTIONS)
+def next_q():
+    st.session_state.current_q = random.choice(QUESTIONS)
     st.session_state.answered = False
-    st.session_state.user_choice = None
+    st.session_state.choice = None
+
+q = st.session_state.current_q
 
 # --- GIAO DIỆN CHÍNH ---
-st.title("🛡️ CHIẾN BINH THINKSMART")
-st.write("Hệ thống luyện tập đối đáp & Kiến thức hưu trí Mỹ")
+st.title("🛡️ Đào Tạo Chiến Binh IUL")
+st.write("Dành riêng cho đội ngũ Agent Thinksmart Insurance")
 
-q = st.session_state.current_question
-
-# Khung hiển thị câu hỏi
+# Hiển thị câu hỏi trong khung Card
 st.markdown(f"""
-    <div class="question-box">
-        <small>MÃ CÂU HỎI: #{q['id']}</small>
-        <br>
-        <p style="font-size: 20px; font-weight: 500;">{q['question']}</p>
+    <div class="question-card">
+        <span style="color: #d4af37; font-weight: bold;">CÂU HỎI #{q['id']}</span>
+        <p style="font-size: 22px; margin-top: 10px;">{q['question']}</p>
     </div>
     """, unsafe_allow_html=True)
 
-# Hiển thị các đáp án
-cols = st.columns(1) # Để dọc cho dễ đọc trên điện thoại
-for option in q['options']:
-    if st.button(option, disabled=st.session_state.answered):
-        st.session_state.user_choice = option
+# Các nút đáp án
+for opt in q['options']:
+    if st.button(opt, disabled=st.session_state.answered, key=opt):
+        st.session_state.choice = opt
         st.session_state.answered = True
         st.rerun()
 
-# Phản hồi sau khi chọn
+# Hiển thị kết quả và giải thích sâu sắc
 if st.session_state.answered:
-    st.divider()
-    if st.session_state.user_choice == q['answer']:
-        st.success("✨ **CHÍNH XÁC!** Bạn đang đi đúng hướng.")
-        st.balloons()
+    st.markdown("---")
+    if st.session_state.choice == q['answer']:
+        st.success("🎯 **CHÍNH XÁC!** Bạn nắm bắt tâm lý rất tốt.")
     else:
-        st.error(f"⚠️ **CẦN LƯU Ý!** Đáp án đúng là: \n\n **{q['answer']}**")
+        st.error(f"🔴 **CẦN XEM LẠI!** Đáp án đúng là: **{q['answer']}**")
     
-    # Phần giải thích sâu sắc
-    with st.container():
-        st.markdown("#### 💡 TƯ DUY CỦA MANAGER:")
-        st.info(q['explanation'])
-        
-        if st.button("TIẾP TỤC THỬ THÁCH ➡️", type="primary"):
-            next_question()
-            st.rerun()
-
-# Footer
-st.markdown("---")
-st.caption("© 2026 Thinksmart Insurance Training System.")
+    with st.expander("📝 XEM GIẢI THÍCH TỪ MANAGER (ANH CÔNG)", expanded=True):
+        st.write(q['explanation'])
+    
+    st.write("")
+    if st.button("TIẾP TỤC BỐC QUẺ ➡️", type="primary"):
+        next_q()
+        st.rerun()
